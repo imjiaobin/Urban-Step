@@ -1,0 +1,130 @@
+@use './variables' as *;
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font-basic;
+    font-size: $fz-regular;
+    line-height: $lh-text;
+    letter-spacing: $ls-regular;
+    font-weight: $fw-normal;
+    color: $neutral-900;
+}
+
+.container{
+    width: 856px;
+    margin:0 auto;
+}
+
+// 避免圖片出現下方的不預期間隔
+img{
+    vertical-align: middle;
+}
+
+// 連結通用樣式
+a{
+    color:$primary-400;
+    text-underline-offset: 0.25px;
+    display: block;
+}
+
+// 標題樣式
+.h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: $lh-title;
+}
+
+.h4{
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: $lh-title;
+}
+
+.h5{
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: $lh-title;
+}
+
+.text-md{
+    font-weight: $fw-normal;
+    font-size: 1rem;
+}
+
+.text-sm{
+    font-weight: $fw-normal;
+    font-size: 0.875rem;
+}
+
+.text-white{
+    color:$neutral-0;
+}
+
+.text-primary-400{
+    color:$primary-400;
+}
+
+.text-primary-100{
+    color:$primary-100;
+}
+
+.text-neutral-600{
+    color:$neutral-600
+}
+
+.bg-primary-100{
+    color: $primary-100;
+}
+
+/* 間距 */
+.py-64{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.py-48{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.py-24{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.py-8{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pe-8{
+    padding-right: 0.5rem;
+}
+
+.pb-48{
+    padding-bottom: 3rem;
+}
+
+.mb-24{
+   margin-bottom: 1.5rem; 
+}
+
+.mb-16{
+   margin-bottom: 1rem; 
+}
+
+.mb-12{
+   margin-bottom: 0.75rem; 
+}
+
+.mb-8{
+   margin-bottom: 0.5rem; 
+}
+
+.mb-4{
+   margin-bottom: 0.25rem; 
+}
+
+
