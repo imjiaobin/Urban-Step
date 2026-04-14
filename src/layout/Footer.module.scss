@@ -1,0 +1,8 @@
+@use "../style/variables" as *;
+.footer {
+  text-align: center;
+  font-size: 0.875rem;
+  p {
+    color: $neutral-600;
+  }
+}

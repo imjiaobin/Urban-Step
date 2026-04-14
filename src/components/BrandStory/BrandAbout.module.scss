@@ -1,0 +1,9 @@
+@use '../../style/variables' as *;
+.about {
+  border-bottom: 1px solid $neutral-300;
+  img {
+    display: inline-block;
+    max-width: 67.25rem;
+    margin: 0 -6.875rem 1.5rem -6.875rem !important;
+  }
+}

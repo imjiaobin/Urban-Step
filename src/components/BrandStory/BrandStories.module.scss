@@ -1,0 +1,13 @@
+@use "../../style/variables" as *;
+.brandStories {
+  a {
+    color: $primary-400;
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+  }
+
+  border-bottom: 1px solid $neutral-300;
+}

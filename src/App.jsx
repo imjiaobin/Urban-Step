@@ -1,11 +1,11 @@
 import './main.scss';
-import About from './pages/About';
+import Layout from './layout/Layout';
 function App() {
   
 
   return (
     <>
-      <About />
+      <Layout />
     </>
   )
 }

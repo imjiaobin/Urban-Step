@@ -1,0 +1,96 @@
+@use './variables' as *;
+.container{
+    width: 53.5rem;
+    margin:0 auto;
+}
+
+// 背景色
+.bg-primary-100{
+    background-color: $primary-100;
+}
+
+.bg-neutral-100{
+    background-color: $neutral-100;
+}
+
+.p-32{
+    padding: 2rem;
+}
+
+/* 間距 */
+.px-12{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.py-64{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.py-48{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.py-24{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.py-8{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pe-8{
+    padding-right: 0.5rem;
+}
+
+.pb-48{
+    padding-bottom: 3rem;
+}
+
+.pb-12{
+    padding-bottom: 0.75rem;
+}
+
+.pb-8{
+    padding-bottom: 0.5rem;
+}
+
+.pb-4{
+    padding-bottom: 0.25rem;
+}
+
+.my-8{
+    margin-bottom: 0.5rem;
+}
+
+.mb-64{
+   margin-bottom: 4rem; 
+}
+
+.mb-48{
+   margin-bottom: 3rem !important; 
+}
+
+.mb-24{
+   margin-bottom: 1.5rem !important; 
+}
+
+.mb-16{
+   margin-bottom: 1rem; 
+}
+
+.mb-12{
+   margin-bottom: 0.75rem; 
+}
+
+.mb-8{
+   margin-bottom: 0.5rem; 
+}
+
+.mb-4{
+   margin-bottom: 0.25rem; 
+}

@@ -1,0 +1,12 @@
+
+@use '../../style/variables' as *;
+.intro{
+     text-align: center;
+     border-radius: 0.75rem;
+    h5{
+       color: $primary-400;
+    }
+    p{
+        padding-bottom: 0.25rem;
+    }
+}
