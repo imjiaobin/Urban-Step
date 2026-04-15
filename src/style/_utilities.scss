@@ -1,6 +1,16 @@
 @use './variables' as *;
-.container{
+.brandstory-container{
     width: 53.5rem;
+    margin:0 auto;
+}
+
+.container{
+    width: 81rem; // 設計稿 - 1920 - 312*2 = 1296
+    margin:0 auto;
+}
+
+.header-container{
+    width: 81rem; 
     margin:0 auto;
 }
 
@@ -15,6 +25,10 @@
 
 .p-32{
     padding: 2rem;
+}
+
+.p-12{
+    padding: 0.75rem;
 }
 
 /* 間距 */
@@ -43,6 +57,10 @@
     padding-bottom: 0.5rem;
 }
 
+.pe-40{
+    padding-right: 2.5rem;
+}
+
 .pe-8{
     padding-right: 0.5rem;
 }
@@ -65,6 +83,14 @@
 
 .my-8{
     margin-bottom: 0.5rem;
+}
+
+.me-48{
+    margin-right: 3rem;
+}
+
+.me-40{
+    margin-right: 2.5rem;
 }
 
 .mb-64{

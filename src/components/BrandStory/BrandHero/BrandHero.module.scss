@@ -1,9 +1,9 @@
-@use '../../style/variables' as *;
+@use '../../../style/variables' as *;
 
 .hero{
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('../../assets/hero.webp');
+        url('../../../assets/BrandStory/BrandHero.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -11,4 +11,5 @@
     color:$neutral-0;
     padding-top: 9.4375rem;
     padding-bottom: 9.4375rem;
+    width:100vw;
 }

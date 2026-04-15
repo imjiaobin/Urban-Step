@@ -1,14 +1,14 @@
-import BrandHero from "../components/BrandStory/BrandHero";
-import BrandIntro from "../components/BrandStory/BrandIntro";
-import BrandAbout from "../components/BrandStory/BrandAbout";
-import BrandHistory from "../components/BrandStory/BrandHistory";
-import BrandValues from "../components/BrandStory/BrandValues";
-import BrandStories from "../components/BrandStory/BrandStories";
+import BrandHero from "../components/BrandStory/BrandHero/BrandHero";
+import BrandIntro from "../components/BrandStory/BrandIntro/BrandIntro";
+import BrandAbout from "../components/BrandStory/BrandAbout/BrandAbout";
+import BrandHistory from "../components/BrandStory/BrandHistory/BrandHistory";
+import BrandValues from "../components/BrandStory/BrandValues/BrandValues";
+import BrandStories from "../components/BrandStory/BrandStories/BrandStories";
 export default function BrandStory() {
   return (
     <>
       <BrandHero />
-      <div className="container">
+      <div className="brandstory-container">
         <BrandIntro />
         <BrandAbout />
         <BrandHistory />

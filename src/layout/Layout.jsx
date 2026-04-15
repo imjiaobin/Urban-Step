@@ -1,8 +1,14 @@
 import BrandStory from "../pages/BrandStory";
 import Footer from "./Footer";
-export default function Layout(){
-    return <>
+import Header from "./Header";
+export default function Layout() {
+  return (
+    <>
+      <Header />
+      <main>
         <BrandStory />
-        <Footer />
+      </main>
+      <Footer />
     </>
+  );
 }

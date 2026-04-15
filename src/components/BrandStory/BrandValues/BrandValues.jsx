@@ -2,7 +2,7 @@ import styles from "./BrandValues.module.scss";
 export default function BrandValues() {
   return (
     <>
-      <div className={`${styles.brandValues} mb-48`}>
+      <section className={`${styles.brandValues} mb-48`}>
         <h4 className="h4 mb-24">品牌理念</h4>
         <ul className="mb-48">
           <li className="mb-12 px-12">
@@ -16,7 +16,7 @@ export default function BrandValues() {
             <span>2025</span>永續材料：選用環保合成皮革與可回收包裝
           </li>
         </ul>
-      </div>
+      </section>
     </>
   );
 }
