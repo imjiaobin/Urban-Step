@@ -1,4 +1,11 @@
 @use './variables' as *;
+
+/* 
+    -------------------------------------
+    --------------- 容器 ---------------- 
+    -------------------------------------
+*/
+
 .brandstory-container{
     width: 53.5rem;
     margin:0 auto;
@@ -14,7 +21,97 @@
     margin:0 auto;
 }
 
-// 背景色
+/* 
+    -------------------------------------
+    -------------- 格線系統 -------------- 
+    -------------------------------------
+*/
+
+.row{
+    display: flex;       // 讓格線水平排列
+    flex-wrap: wrap;     // 自動換行
+    margin-right: -12px; // 避免最左側 padding 
+    margin-left: -12px;  // 避免最右側 padding
+}
+
+.col{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    width: 100%;
+}
+
+.col-1{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    width: calc( 100% / 12);
+}
+
+.col-2{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    width: calc( 100% / 12 * 2);
+}
+
+.col-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    width: calc( 100% / 12 * 3);
+}
+
+.col-4{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    width: calc( 100% / 12 * 4);
+}
+
+.col-5{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    width: calc( 100% / 12 * 5);
+}
+
+.col-6{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    width: calc( 100% / 12 * 6);
+}
+
+.col-7{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    width: calc( 100% / 12 * 7);
+}
+
+.col-8{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    width: calc( 100% / 12 * 8);
+}
+
+.col-9{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    width: calc( 100% / 12 * 9);
+}
+
+.col-10{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    width: calc( 100% / 12 * 10);
+}
+
+.col-11{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    width: calc( 100% / 12 * 2);
+}
+
+/* 
+    -------------------------------------
+    --------------- 背景色 --------------- 
+    -------------------------------------
+*/
+
 .bg-primary-100{
     background-color: $primary-100;
 }
@@ -23,6 +120,13 @@
     background-color: $neutral-100;
 }
 
+/* 
+    -------------------------------------
+    ---------------- 間距 ---------------- 
+    -------------------------------------
+*/
+
+/* ----- 內距 ----- */
 .p-32{
     padding: 2rem;
 }
@@ -31,7 +135,6 @@
     padding: 0.75rem;
 }
 
-/* 間距 */
 .px-12{
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -80,6 +183,8 @@
 .pb-4{
     padding-bottom: 0.25rem;
 }
+
+/* ----- 外距 ----- */
 
 .my-8{
     margin-bottom: 0.5rem;

@@ -1,4 +1,8 @@
 @use './variables' as *;
+html {
+    scrollbar-gutter: stable; // 保留捲軸空間，防止頁面切換時 nav 位移
+}
+
 *, *::before, *::after{
     box-sizing: border-box;
 }

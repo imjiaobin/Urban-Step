@@ -12,20 +12,8 @@
     margin-right: 3rem;
   }
 
-  //   a {
-  //     color: $neutral-900;
-  //     display: inline-block;
-  //     font-size: 1.125rem;
-  //     font-weight: 500;
-  //   }
-  //   a:hover {
-  //     color: $primary-400;
-  //   }
-
-  a {
-    color: $neutral-900;
-  }
   .navLink {
+    color: $neutral-900;
     display: inline-block;
     font-size: 1.125rem;
     font-weight: 500;
@@ -52,5 +40,9 @@
         transform: scaleX(1); // hover 時展開到全寬
       }
     }
+  }
+
+  .userIcon{
+    color: $neutral-900;
   }
 }

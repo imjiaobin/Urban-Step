@@ -1,4 +1,5 @@
 import styles from "./Header.module.scss";
+import { NavLink } from "react-router-dom";
 import { LuUser } from "react-icons/lu";
 import logo from "../assets/logo.svg";
 export default function Header() {
@@ -6,14 +7,21 @@ export default function Header() {
     <>
       <header className="header-container">
         <nav className={`${styles.navbar}`}>
-          
           <div>
-            <img src={logo} alt="" />
-            <a className={`${styles.navLink} me-40`} href="">商品列表</a>
-            <a className={`${styles.navLink} me-40`} href="">品牌故事</a>
+            <NavLink to='/'>
+              <img className="py-12" src={logo} alt="" />
+            </NavLink>
+            <NavLink className={`${styles.navLink} me-40 py-12`} to="/">
+              品牌故事
+            </NavLink>
+            <NavLink className={`${styles.navLink} me-40 py-12`} to="/products">
+              商品列表
+            </NavLink>
           </div>
           <div>
-            <a className="p-12" href=""><LuUser size={24}/></a>
+            <NavLink className={`${styles.userIcon} me-40 p-12`} to="">
+              <LuUser size={24} />
+            </NavLink>
           </div>
         </nav>
       </header>

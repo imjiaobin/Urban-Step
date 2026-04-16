@@ -1,8 +1,7 @@
 import './main.scss';
 import Layout from './layout/Layout';
-function App() {
-  
 
+function App() {
   return (
     <>
       <Layout />
