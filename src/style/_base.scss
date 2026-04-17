@@ -1,34 +1,34 @@
-@use './variables' as *;
+@use "./variables" as *;
 html {
-    scrollbar-gutter: stable; // 保留捲軸空間，防止頁面切換時 nav 位移
+  scrollbar-gutter: stable; // 保留捲軸空間，防止頁面切換時 nav 位移
 }
 
-*, *::before, *::after{
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-body{
-    font-family: $font-basic;
-    font-size: $fz-regular;
-    line-height: $lh-text;
-    letter-spacing: $ls-regular;
-    font-weight: $fw-normal;
-    color: $neutral-900;
+body {
+  font-family: $font-basic;
+  font-size: $fz-regular;
+  line-height: $lh-text;
+  letter-spacing: $ls-regular;
+  font-weight: $fw-normal;
+  color: $neutral-900;
 }
 
 // 避免圖片出現下方的不預期間隔
-img{
-    vertical-align: middle;
+img {
+  vertical-align: middle;
 }
 
 // 連結通用樣式
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
+  color: $neutral-900;
 }
 
-
-
-
-
-
-
+a:active {
+  font-weight: 600;
+}

@@ -1,0 +1,23 @@
+@use "../../style/variables" as *;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+
+  img {
+    display: inline-block;
+    margin-right: 3rem;
+  }
+
+  .userIcon{
+    color: $neutral-900;
+    display: inline-block;
+    transition: transform 0.4s ease;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@use "../../../style/variables" as *;
+.asideList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

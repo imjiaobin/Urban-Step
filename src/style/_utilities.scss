@@ -1,4 +1,4 @@
-@use './variables' as *;
+@use "./variables" as *;
 
 /* 
     -------------------------------------
@@ -6,19 +6,19 @@
     -------------------------------------
 */
 
-.brandstory-container{
-    width: 53.5rem;
-    margin:0 auto;
+.brandstory-container {
+  width: 54.5rem;
+  margin: 0 auto;
 }
 
-.container{
-    width: 81rem; // 設計稿 - 1920 - 312*2 = 1296
-    margin:0 auto;
+.container {
+  width: 81rem; // 設計稿 - 1920 - 312*2 = 1296
+  margin: 0 auto;
 }
 
-.header-container{
-    width: 81rem; 
-    margin:0 auto;
+.header-container {
+  width: 81rem;
+  margin: 0 auto;
 }
 
 /* 
@@ -27,83 +27,83 @@
     -------------------------------------
 */
 
-.row{
-    display: flex;       // 讓格線水平排列
-    flex-wrap: wrap;     // 自動換行
-    margin-right: -12px; // 避免最左側 padding 
-    margin-left: -12px;  // 避免最右側 padding
+.row {
+  display: flex; // 讓格線水平排列
+  flex-wrap: wrap; // 自動換行
+  margin-right: -12px; // 避免最左側 padding
+  margin-left: -12px; // 避免最右側 padding
 }
 
-.col{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    width: 100%;
+.col {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: 100%;
 }
 
-.col-1{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    width: calc( 100% / 12);
+.col-1 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: calc(100% / 12);
 }
 
-.col-2{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    width: calc( 100% / 12 * 2);
+.col-2 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: calc(100% / 12 * 2);
 }
 
-.col-3{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    width: calc( 100% / 12 * 3);
+.col-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: calc(100% / 12 * 3);
 }
 
-.col-4{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    width: calc( 100% / 12 * 4);
+.col-4 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: calc(100% / 12 * 4);
 }
 
-.col-5{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    width: calc( 100% / 12 * 5);
+.col-5 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: calc(100% / 12 * 5);
 }
 
-.col-6{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    width: calc( 100% / 12 * 6);
+.col-6 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: calc(100% / 12 * 6);
 }
 
-.col-7{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    width: calc( 100% / 12 * 7);
+.col-7 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: calc(100% / 12 * 7);
 }
 
-.col-8{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    width: calc( 100% / 12 * 8);
+.col-8 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: calc(100% / 12 * 8);
 }
 
-.col-9{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    width: calc( 100% / 12 * 9);
+.col-9 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: calc(100% / 12 * 9);
 }
 
-.col-10{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    width: calc( 100% / 12 * 10);
+.col-10 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: calc(100% / 12 * 10);
 }
 
-.col-11{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    width: calc( 100% / 12 * 2);
+.col-11 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: calc(100% / 12 * 2);
 }
 
 /* 
@@ -112,12 +112,12 @@
     -------------------------------------
 */
 
-.bg-primary-100{
-    background-color: $primary-100;
+.bg-primary-100 {
+  background-color: $primary-100;
 }
 
-.bg-neutral-100{
-    background-color: $neutral-100;
+.bg-neutral-100 {
+  background-color: $neutral-100;
 }
 
 /* 
@@ -127,101 +127,150 @@
 */
 
 /* ----- 內距 ----- */
-.p-32{
-    padding: 2rem;
+.p-32 {
+  padding: 2rem;
 }
 
-.p-12{
-    padding: 0.75rem;
+.p-12 {
+  padding: 0.75rem;
 }
 
-.px-12{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+.px-12 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
-.py-64{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+.py-64 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-.py-48{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+.py-48 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-.py-24{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+.py-24 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
-.py-8{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+.py-8 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
-.pe-40{
-    padding-right: 2.5rem;
+.py-7 {
+  padding-top: 0.4375rem;
+  padding-bottom: 0.4375rem;
 }
 
-.pe-8{
-    padding-right: 0.5rem;
+.pe-40 {
+  padding-right: 2.5rem;
 }
 
-.pb-48{
-    padding-bottom: 3rem;
+.pe-8 {
+  padding-right: 0.5rem;
 }
 
-.pb-12{
-    padding-bottom: 0.75rem;
+.pb-48 {
+  padding-bottom: 3rem;
 }
 
-.pb-8{
-    padding-bottom: 0.5rem;
+.pb-12 {
+  padding-bottom: 0.75rem;
 }
 
-.pb-4{
-    padding-bottom: 0.25rem;
+.pb-8 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-4 {
+  padding-bottom: 0.25rem;
 }
 
 /* ----- 外距 ----- */
 
-.my-8{
-    margin-bottom: 0.5rem;
+.my-8 {
+  margin-bottom: 0.5rem;
 }
 
-.me-48{
-    margin-right: 3rem;
+.me-48 {
+  margin-right: 3rem;
 }
 
-.me-40{
-    margin-right: 2.5rem;
+.me-40 {
+  margin-right: 2.5rem;
 }
 
-.mb-64{
-   margin-bottom: 4rem; 
+.mb-64 {
+  margin-bottom: 4rem !important;
 }
 
-.mb-48{
-   margin-bottom: 3rem !important; 
+.mb-48 {
+  margin-bottom: 3rem !important;
 }
 
-.mb-24{
-   margin-bottom: 1.5rem !important; 
+.mb-32 {
+  margin-bottom: 2rem !important;
 }
 
-.mb-16{
-   margin-bottom: 1rem; 
+.mb-24 {
+  margin-bottom: 1.5rem !important;
 }
 
-.mb-12{
-   margin-bottom: 0.75rem; 
+.mb-16 {
+  margin-bottom: 1rem !important;
 }
 
-.mb-8{
-   margin-bottom: 0.5rem; 
+.mb-12 {
+  margin-bottom: 0.75rem !important;
 }
 
-.mb-4{
-   margin-bottom: 0.25rem; 
+.mb-8 {
+  margin-bottom: 0.5rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 0.25rem !important;
+}
+
+/* 
+    -------------------------------------
+    ---------- link 通用樣式 -------------
+    -------------------------------------
+*/
+
+// hover 底線
+.link-underline {
+  display: inline-block;
+  position: relative;
+  color: $neutral-900;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $primary-400;
+    transform: scaleX(0) translateZ(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    color: $primary-400 !important;
+    &::after {
+      transform: scaleX(1) translateZ(0);
+    }
+  }
+
+  &.active {
+    color: $primary-400 !important;
+    &::after {
+      transform: scaleX(1) translateZ(0);
+    }
+  }
 }
