@@ -1,6 +1,7 @@
 import HomeHero from "../components/Home/HomeHero/HomeHero";
 import NewArrivals from "../components/Home/NewArrivals/NewArrivals";
 import Restock from "../components/Home/Restock/Restock";
+import Collab from "../components/Home/Collab/Collab";
 export default function Home() {
   const newProducts = [
     {
@@ -76,6 +77,7 @@ export default function Home() {
       <div className="row">
         <NewArrivals newProducts={newProducts} />
         <Restock restockItems={restockItems} />
+        <Collab />
       </div>
     </>
   );
