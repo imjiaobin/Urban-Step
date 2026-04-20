@@ -1,0 +1,22 @@
+.newArrivals {
+    text-align: center;
+  .card {
+    text-align: start;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+    img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+    .productPrice {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    &:hover {
+      transform: translateY(-0.25rem) translateX(-0.25rem);
+      box-shadow: 0.25rem 0.5rem 1.25rem rgba(0, 0, 0, 0.12);
+    }
+  }
+}

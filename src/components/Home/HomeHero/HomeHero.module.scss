@@ -1,0 +1,35 @@
+@use "../../../style/variables" as *;
+.HomeHero {
+  padding-top: 18.0625rem;
+  padding-left: 12.5rem;
+  padding-bottom: 24rem;
+  background-image: url("../../../assets/Home/HomeHero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: start;
+  width: 100vw;
+  margin-left: calc(50% - 50vw); // 避免圖片整個往右邊偏
+  .heroTop {
+    color: $neutral-0;
+  }
+  .heroBottom {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    margin-left: 0.5rem;
+  }
+  .heroBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    border-radius: 0.375rem;
+    background-color: $primary-300;
+    padding: 0.75rem 1.5rem;
+    transition: transform 0.4s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

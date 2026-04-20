@@ -4,7 +4,7 @@ import { formatMoney } from '../../../utils/formatMoney';
 export default function ProductList({ products }) {
   return (
     <>
-      <section className={`row ${styles.productList}`}>
+      <section className={`row ${styles.productList} mb-48`}>
         {products.map((product) => {
           return (
             <NavLink  key={product.id} className={`${styles.productCard} col-4 mb-48`} to="">
