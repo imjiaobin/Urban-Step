@@ -1,13 +1,15 @@
 import { Outlet } from "react-router-dom";
 // import BrandStory from "../pages/BrandStory";
-import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
+import Banner from "./Banner/Banner";
+import Footer from "./Footer/Footer";
 export default function Layout() {
   return (
     <>
       <Header />
       <main className="container">
         <Outlet />
+        <Banner />
       </main>
       <Footer />
     </>

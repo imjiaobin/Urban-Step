@@ -1,0 +1,22 @@
+@use "../../../style/variables" as *;
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button{
+    border: none;
+    padding: 0.5rem 0.875rem;
+    background-color: transparent;
+    transition: 0.3s ease;
+
+    .paginationIcon{
+        padding: 0.625rem;
+    }
+
+    &:hover{
+        background-color: $primary-300;
+    }
+  }
+
+}

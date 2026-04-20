@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "./ProductList.module.scss";
+import { formatMoney } from '../../../utils/formatMoney';
 export default function ProductList({ products }) {
   return (
     <>
@@ -10,7 +11,7 @@ export default function ProductList({ products }) {
                 <img className="mb-12" src={product.imageUrl} alt="" />
                 <h6 className="h6 mb-4">{product.productName}</h6>
                 <span className={`${styles.productPrice}`}>
-                  NT ${product.price}
+                  NT { formatMoney(product.price)}
                 </span>
             </NavLink>
           );

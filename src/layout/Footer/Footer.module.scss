@@ -1,9 +1,18 @@
 @use "../../style/variables" as *;
-.footer {
+footer {
   width: 100vw;
-  text-align: center;
-  font-size: 0.875rem;
-  p {
-    color: $neutral-600;
+  .footerTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .footerBottom {
+    text-align: center;
+    font-size: 0.875rem;
+    border-top: 0.125rem solid $neutral-300;
+    p {
+      color: $neutral-600;
+    }
   }
 }
