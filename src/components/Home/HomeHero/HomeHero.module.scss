@@ -12,6 +12,7 @@
   margin-left: calc(50% - 50vw); // 避免圖片整個往右邊偏
   .heroTop {
     color: $neutral-0;
+    transition: transform 0.3s ease-out, 
   }
   .heroBottom {
     display: flex;

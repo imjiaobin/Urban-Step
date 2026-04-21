@@ -11,8 +11,8 @@ export default function NewArrivals({ newProducts }) {
             return (
               <div key={product.id} className={`${styles.card} col-6 mb-40`}>
                 <img className="mb-12" src={product.imageUrl} alt="" />
-                  <h5 className="h5 mb-4">{product.productName}</h5>
-                  <p className="mb-4">NT$ {product.price}</p>
+                <h5 className="h5 mb-4">{product.productName}</h5>
+                <p className="mb-4">NT$ {product.price}</p>
               </div>
             );
           })}

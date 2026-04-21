@@ -3,6 +3,7 @@ import NewArrivals from "../components/Home/NewArrivals/NewArrivals";
 import Restock from "../components/Home/Restock/Restock";
 import Collab from "../components/Home/Collab/Collab";
 import Categories from "../components/Home/Categories/Categories";
+import Inspiration from "../components/Home/Inspiration/Inspiration";
 export default function Home() {
   const newProducts = [
     {
@@ -73,11 +74,36 @@ export default function Home() {
     },
   ];
   const categoryList = [
-    { id: 1, name: "慢跑鞋", engName:'URBAN RUNNER', imageUrl: '../../../../public/Categories/URBAN RUNNER.png'},
-    { id: 2, name: "滑板鞋", engName:'STREET MODE', imageUrl: '../../../../public/Categories/STREET MODE.png'},
-    { id: 3, name: "厚底鞋", engName:'CHUNK DISTRICT', imageUrl: '../../../../public/Categories/CHUNK DISTRICT.png' },
-    { id: 4, name: "聯名企劃", engName:'COLLAB ZONE', imageUrl: '../../../../public/Categories/COLLAB ZONE.png' },
-    { id: 5, name: "限定款式", engName:'LIMITED', imageUrl: '../../../../public/Categories/LIMITED.png' },
+    {
+      id: 1,
+      name: "慢跑鞋",
+      engName: "URBAN RUNNER",
+      imageUrl: "../../../../public/Categories/URBAN RUNNER.png",
+    },
+    {
+      id: 2,
+      name: "滑板鞋",
+      engName: "STREET MODE",
+      imageUrl: "../../../../public/Categories/STREET MODE.png",
+    },
+    {
+      id: 3,
+      name: "厚底鞋",
+      engName: "CHUNK DISTRICT",
+      imageUrl: "../../../../public/Categories/CHUNK DISTRICT.png",
+    },
+    {
+      id: 4,
+      name: "聯名企劃",
+      engName: "COLLAB ZONE",
+      imageUrl: "../../../../public/Categories/COLLAB ZONE.png",
+    },
+    {
+      id: 5,
+      name: "限定款式",
+      engName: "LIMITED",
+      imageUrl: "../../../../public/Categories/LIMITED.png",
+    },
   ];
   return (
     <>
@@ -88,6 +114,7 @@ export default function Home() {
         <Collab />
         <Categories categoryList={categoryList} />
       </div>
+      <Inspiration />
     </>
   );
 }
