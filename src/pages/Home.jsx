@@ -12,7 +12,7 @@ export default function Home() {
       productName: "Monoverse",
       color: "米白",
       price: 3600,
-      imageUrl: "../../../../public/NewArrivals/new-1.png",
+      imageUrl: "/NewArrivals/new-1.png",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ export default function Home() {
       productName: "PLATFORM 404",
       color: "深藍",
       price: 2600,
-      imageUrl: "../../../../public/NewArrivals/new-2.png",
+      imageUrl: "/NewArrivals/new-2.png",
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ export default function Home() {
       productName: "URBAN FORCE",
       color: "淺褐色",
       price: 3200,
-      imageUrl: "../../../../public/NewArrivals/new-3.png",
+      imageUrl: "/NewArrivals/new-3.png",
     },
     {
       id: 4,
@@ -36,7 +36,7 @@ export default function Home() {
       productName: "Mode90",
       color: "深藍",
       price: 4000,
-      imageUrl: "../../../../public/NewArrivals/new-4.png",
+      imageUrl: "/NewArrivals/new-4.png",
     },
   ];
   const restockItems = [
@@ -46,7 +46,7 @@ export default function Home() {
       productName: "Melty Kiss",
       color: "粉嫩紫",
       price: 4000,
-      imageUrl: "../../../../public/Restocks/MeltyKiss_LightPurple.png",
+      imageUrl: "/Restocks/MeltyKiss_LightPurple.png",
     },
     {
       id: 2,
@@ -54,7 +54,7 @@ export default function Home() {
       productName: "PLATFORM 404",
       color: "深邃藍",
       price: 2600,
-      imageUrl: "../../../../public/Restocks/platform404_darkblue.png",
+      imageUrl: "/Restocks/platform404_darkblue.png",
     },
     {
       id: 3,
@@ -62,7 +62,7 @@ export default function Home() {
       productName: "R:NUER",
       color: "淺褐色",
       price: 4000,
-      imageUrl: "../../../../public/Restocks/R_NUER_Plain.png",
+      imageUrl: "/Restocks/R_NUER_Plain.png",
     },
     {
       id: 4,
@@ -70,7 +70,7 @@ export default function Home() {
       productName: "BloomBlok",
       color: "米白",
       price: 3200,
-      imageUrl: "../../../../public/Restocks/BloomBlok_White.png",
+      imageUrl: "/Restocks/BloomBlok_White.png",
     },
   ];
   const categoryList = [
@@ -78,31 +78,31 @@ export default function Home() {
       id: 1,
       name: "慢跑鞋",
       engName: "URBAN RUNNER",
-      imageUrl: "../../../../public/Categories/URBAN RUNNER.png",
+      imageUrl: "/Categories/URBAN RUNNER.png",
     },
     {
       id: 2,
       name: "滑板鞋",
       engName: "STREET MODE",
-      imageUrl: "../../../../public/Categories/STREET MODE.png",
+      imageUrl: "/Categories/STREET MODE.png",
     },
     {
       id: 3,
       name: "厚底鞋",
       engName: "CHUNK DISTRICT",
-      imageUrl: "../../../../public/Categories/CHUNK DISTRICT.png",
+      imageUrl: "/Categories/CHUNK DISTRICT.png",
     },
     {
       id: 4,
       name: "聯名企劃",
       engName: "COLLAB ZONE",
-      imageUrl: "../../../../public/Categories/COLLAB ZONE.png",
+      imageUrl: "/Categories/COLLAB ZONE.png",
     },
     {
       id: 5,
       name: "限定款式",
       engName: "LIMITED",
-      imageUrl: "../../../../public/Categories/LIMITED.png",
+      imageUrl: "/Categories/LIMITED.png",
     },
   ];
   return (

@@ -13,7 +13,7 @@ const products = [
     productName: "PLATFORM 404",
     color: "深邃藍",
     price: 2600,
-    imageUrl: "../../../../public/Products/platform404_darkblue.png",
+    imageUrl: "/Products/platform404_darkblue.png",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const products = [
     productName: "PLATFORM 404",
     color: "大地黃",
     price: 2600,
-    imageUrl: "../../../../public/Products/platform404_GroundYellow.png",
+    imageUrl: "/Products/platform404_GroundYellow.png",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const products = [
     productName: "VM001",
     color: "灰色",
     price: 2600,
-    imageUrl: "../../../../public/Products/VM001_LightGrey.png",
+    imageUrl: "/Products/VM001_LightGrey.png",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const products = [
     productName: "Melty Kiss",
     color: "粉嫩紫",
     price: 4000,
-    imageUrl: "../../../../public/Products/MeltyKiss_LightPurple.png",
+    imageUrl: "/Products/MeltyKiss_LightPurple.png",
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const products = [
     productName: "BloomBlok",
     color: "米白",
     price: 3200,
-    imageUrl: "../../../../public/Products/BloomBlok_White.png",
+    imageUrl: "/Products/BloomBlok_White.png",
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ const products = [
     productName: "BloomBlok",
     color: "莫蘭迪藍",
     price: 3200,
-    imageUrl: "../../../../public/Products/BloomBlok_Blue.png",
+    imageUrl: "/Products/BloomBlok_Blue.png",
   },
   {
     id: 7,
@@ -61,7 +61,7 @@ const products = [
     productName: "R:NUER",
     color: "淺褐色",
     price: 4000,
-    imageUrl: "../../../../public/Products/R_NUER_Plain.png",
+    imageUrl: "/Products/R_NUER_Plain.png",
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ const products = [
     productName: "Sugar Snap",
     color: "黃色",
     price: 4000,
-    imageUrl: "../../../../public/Products/SugarSnap_Yellow.png",
+    imageUrl: "/Products/SugarSnap_Yellow.png",
   },
   {
     id: 9,
@@ -77,7 +77,7 @@ const products = [
     productName: "NeoFoam",
     color: "淺灰色",
     price: 4000,
-    imageUrl: "../../../../public/Products/NeoFoam_Grey.png",
+    imageUrl: "/Products/NeoFoam_Grey.png",
   },
 ];
 
