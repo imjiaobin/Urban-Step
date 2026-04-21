@@ -12,6 +12,9 @@ export default function Header() {
               <img className="py-12" src={logo} alt="" />
             </NavLink>
             <NavLink className={`link-underline me-40 py-12`} to="/">
+              首頁
+            </NavLink>
+            <NavLink className={`link-underline me-40 py-12`} to="/brandstory">
               品牌故事
             </NavLink>
             <NavLink className={`link-underline me-40 py-12`} to="/products">

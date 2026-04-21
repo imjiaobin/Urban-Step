@@ -4,8 +4,8 @@ import styles from "./Footer.module.scss";
 export default function Footer() {
   return (
     <>
-      <footer className={`bg-neutral-100 py-64`}>
-        <div className="container">
+      <footer className={`bg-neutral-100`}>
+        <div className="container py-64">
         <div className={`${styles.footerTop}  mb-24`}>
           <div>
             <NavLink to="/">
@@ -14,6 +14,9 @@ export default function Footer() {
           </div>
           <div>
             <NavLink className={`link-underline me-40 py-12`} to="/">
+              首頁
+            </NavLink>
+            <NavLink className={`link-underline me-40 py-12`} to="/brandstory">
               品牌故事
             </NavLink>
             <NavLink className={`link-underline me-40 py-12`} to="/products">

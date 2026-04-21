@@ -1,0 +1,72 @@
+@use "../../../style/variables" as *;
+.categories {
+  // display: flex;
+  // flex-direction: column;
+  // gap: 1.5rem;
+
+  .swiperWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .prevBtn,
+  .nextBtn {
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: $neutral-300;
+  }
+
+  a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      inset: 0; // 等於 top/right/bottom/left 全部設 0
+      background-color: rgba(0, 0, 0, 0.4);
+      transition: opacity 0.3s ease-in-out;
+    }
+    &:hover::after {
+      opacity: 0;
+    }
+    &:hover .categoryText {
+      opacity: 0;
+    }
+
+    img {
+      display: inline-block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    .categoryText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 3;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      transition: opacity 0.3s ease-in-out;
+
+      span {
+        display: block;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: $neutral-0;
+        white-space: nowrap;
+      }
+
+      .engText {
+        font-family: "Noto Sans TC";
+      }
+    }
+  }
+}
