@@ -48,6 +48,36 @@
     line-height: $lh-title;
 }
 
+@media(max-width: 767px) {
+    .h3-md{
+        font-size: 1.75rem;
+    }
+    .h4-md{
+        font-size: 1.5rem;
+    }
+    .h5-md{
+        font-size: 1.25rem;
+    }
+    .h6-md{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 576px) {
+    .h3-sm{
+        font-size: 1.75rem;
+    }
+    .h4-sm{
+        font-size: 1.5rem;
+    }
+    .h5-sm{
+        font-size: 1rem;
+    }
+    .h6-sm{
+        font-size: 1rem;
+    }
+}
+
 .text-md{
     font-weight: $fw-normal;
     font-size: 1rem;

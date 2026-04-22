@@ -3,7 +3,7 @@ import styles from "./BrandStories.module.scss";
 export default function BrandStories() {
   return (
     <>
-      <section className={`${styles.brandStories} mb-48`}>
+      <section className={`col-8 col-md-4  ${styles.brandStories} mb-48 mb-md-32`}>
         <h4 className="h4 mb-24">品牌故事</h4>
         <div className={`${styles.storyLink}`}>
           <GoArrowUpRight size={18} />
@@ -17,7 +17,7 @@ export default function BrandStories() {
             穿上 URBNSTEP 的他們
           </a>
         </div>
-        <div className={`${styles.storyLink}  mb-48`}>
+        <div className={`${styles.storyLink}  mb-48 mb-md-32`}>
           <GoArrowUpRight size={18} />
           <a className="py-8" href="">
             URBNSTEP 鞋履的誕生過程

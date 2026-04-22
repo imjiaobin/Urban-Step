@@ -4,9 +4,9 @@ export default function Banner() {
   return (
     <>
       <section className={`${styles.banner} bg-primary-100 py-24`}>
-        <h4 className="h4 me-24">加入會員取得 9 折優惠</h4>
+        <h4 className="h4 h4-md me-24">加入會員取得 9 折優惠</h4>
 
-        <NavLink className="" to="/signup">
+        <NavLink className="p-md-8" to="/signup">
           馬上註冊
         </NavLink>
       </section>

@@ -18,9 +18,10 @@ body {
   color: $neutral-900;
 }
 
-// 避免圖片出現下方的不預期間隔
 img {
-  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; // 避免圖片出現下方的不預期間隔
 }
 
 // 連結通用樣式
