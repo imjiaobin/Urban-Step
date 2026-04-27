@@ -11,10 +11,15 @@
   position: relative;
   overflow: hidden;
   border-radius: 0;
-  transition: transform 0.3s ease-out, 
-  border-radius 0.3s ease;
+  // transform transition 移到 MouseDrift.jsx 動態控制，這裡只保留 border-radius
+  transition: border-radius 0.3s ease;
   &:hover {
     border-radius: 1.25rem;
+  }
+
+  // 桌機才有 mousemove 互動，才需要預分配 GPU layer
+  @media (min-width: 768px) {
+    will-change: transform;
   }
 }
 
