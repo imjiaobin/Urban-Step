@@ -1,6 +1,16 @@
 @use "./variables" as *;
 html {
-  scrollbar-gutter: stable; // 保留捲軸空間，防止頁面切換時 nav 位移
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  html {
+    scrollbar-gutter: stable; // 保留捲軸空間，防止頁面切換時 nav 位移
+  }
 }
 
 *,
