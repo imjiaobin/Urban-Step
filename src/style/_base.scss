@@ -1,6 +1,16 @@
 @use "./variables" as *;
 html {
-  scrollbar-gutter: stable; // 保留捲軸空間，防止頁面切換時 nav 位移
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  html {
+    scrollbar-gutter: stable; // 保留捲軸空間，防止頁面切換時 nav 位移
+  }
 }
 
 *,
@@ -18,9 +28,10 @@ body {
   color: $neutral-900;
 }
 
-// 避免圖片出現下方的不預期間隔
 img {
-  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; // 避免圖片出現下方的不預期間隔
 }
 
 // 連結通用樣式

@@ -5,19 +5,19 @@ import logo from "../../assets/logo.svg";
 export default function Header() {
   return (
     <>
-      <header className="header-container">
+      <header className="container">
         <nav className={`${styles.navbar}`}>
           <div>
             <NavLink to='/'>
               <img className="py-12" src={logo} alt="" />
             </NavLink>
-            <NavLink className={`link-underline me-40 py-12`} to="/">
+            <NavLink className={`d-sm-none link-underline me-40 py-12`} to="/">
               首頁
             </NavLink>
-            <NavLink className={`link-underline me-40 py-12`} to="/brandstory">
+            <NavLink className={`d-sm-none link-underline me-40 py-12`} to="/brandstory">
               品牌故事
             </NavLink>
-            <NavLink className={`link-underline me-40 py-12`} to="/products">
+            <NavLink className={`d-sm-none link-underline me-40 py-12`} to="/products">
               商品列表
             </NavLink>
           </div>

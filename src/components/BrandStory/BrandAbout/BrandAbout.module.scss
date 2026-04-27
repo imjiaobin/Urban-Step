@@ -1,9 +1,16 @@
-@use '../../../style/variables' as *;
+@use "../../../style/variables" as *;
 .about {
   border-bottom: 1px solid $neutral-300;
   img {
-    display: inline-block;
-    max-width: 67.25rem;
-    margin: 0 -7rem 1.5rem -7rem !important;
+    display: block;
+    width: 100%;
+  }
+  .textContent {
+    padding-inline: 10%;
+  }
+  @media (max-width:766.98px) {
+    .textContent {
+      padding-inline: 0;
+    }
   }
 }

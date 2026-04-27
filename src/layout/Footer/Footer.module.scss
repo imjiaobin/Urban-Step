@@ -1,11 +1,10 @@
 @use "../../style/variables" as *;
 footer {
-  width: 100vw;
-  .footerTop{
+  width: 100%;
+  .footerTop {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
   }
   .footerBottom {
     text-align: center;
@@ -13,6 +12,22 @@ footer {
     border-top: 0.125rem solid $neutral-300;
     p {
       color: $neutral-600;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .footerLogo {
+      margin-bottom: 0.5rem;
+    }
+    .footerLink {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .footerTop {
+      a {
+        width: fit-content;
+      }
     }
   }
 }
