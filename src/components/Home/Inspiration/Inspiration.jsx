@@ -18,24 +18,24 @@ export default function Inspiration() {
     <section className="py-64 mb-48">
       <h2 className="h2 mb-16">穿搭靈感</h2>
       <div className={styles.inspiration}>
-        <MouseDrift className={styles.imgWrapper}><img src={img1} alt="inspiration-1" className={styles.img} /></MouseDrift>
-        <MouseDrift className={styles.imgWrapper}><img src={img2} alt="inspiration-2" className={styles.img} /></MouseDrift>
-        <MouseDrift className={styles.imgWrapper}><img src={img4} alt="inspiration-4" className={styles.img} /></MouseDrift>
-        <MouseDrift className={styles.imgWrapper}><img src={img5} alt="inspiration-5" className={styles.img} /></MouseDrift>
-        <MouseDrift className={`${styles.imgWrapper} ${styles.tall} ${styles.wide}`}>
+        <MouseDrift className={styles.imgWrapper} intensity={12} ><img src={img1} alt="inspiration-1" className={styles.img} /></MouseDrift>
+        <MouseDrift className={styles.imgWrapper} intensity={12} ><img src={img2} alt="inspiration-2" className={styles.img} /></MouseDrift>
+        <MouseDrift className={styles.imgWrapper} intensity={12} ><img src={img4} alt="inspiration-4" className={styles.img} /></MouseDrift>
+        <MouseDrift className={styles.imgWrapper} intensity={12} ><img src={img5} alt="inspiration-5" className={styles.img} /></MouseDrift>
+        <MouseDrift className={`${styles.imgWrapper} ${styles.tall} ${styles.wide}`} intensity={12} >
           <img src={img3} alt="inspiration-3" className={styles.img} />
         </MouseDrift>
 
-        <MouseDrift className={`${styles.imgWrapper} ${styles.tall} ${styles.wide}`}>
+        <MouseDrift className={`${styles.imgWrapper} ${styles.tall} ${styles.wide}`} intensity={12} >
           <img src={img10} alt="inspiration-10" className={styles.img} />
         </MouseDrift>
-        <MouseDrift className={styles.imgWrapper}><img src={img6} alt="inspiration-6" className={styles.img} /></MouseDrift>
+        <MouseDrift className={styles.imgWrapper}><img src={img6} intensity={12}  alt="inspiration-6" className={styles.img} /></MouseDrift>
 
-        <MouseDrift className={styles.imgWrapper}><img src={img7} alt="inspiration-7" className={styles.img} /></MouseDrift>
-        <MouseDrift className={styles.imgWrapper}><img src={img8} alt="inspiration-8" className={styles.img} /></MouseDrift>
-        <MouseDrift className={styles.imgWrapper}><img src={img9} alt="inspiration-9" className={styles.img} /></MouseDrift>
-        <MouseDrift className={styles.imgWrapper}><img src={img11} alt="inspiration-11" className={styles.img} /></MouseDrift>
-        <MouseDrift className={styles.imgWrapper}><img src={img12} alt="inspiration-12" className={styles.img} /></MouseDrift>
+        <MouseDrift className={styles.imgWrapper}><img src={img7} intensity={12}  alt="inspiration-7" className={styles.img} /></MouseDrift>
+        <MouseDrift className={styles.imgWrapper}><img src={img8} intensity={12}  alt="inspiration-8" className={styles.img} /></MouseDrift>
+        <MouseDrift className={styles.imgWrapper}><img src={img9} intensity={12}  alt="inspiration-9" className={styles.img} /></MouseDrift>
+        <MouseDrift className={styles.imgWrapper}><img src={img11} intensity={12}  alt="inspiration-11" className={styles.img} /></MouseDrift>
+        <MouseDrift className={styles.imgWrapper}><img src={img12} intensity={12}  alt="inspiration-12" className={styles.img} /></MouseDrift>
       </div>
     </section>
   );

@@ -1,105 +1,115 @@
-@use './variables' as *;
+@use "./variables" as *;
 // 標題樣式
-.display1{
-    font-weight: 700;
-    font-size: 4rem;
-    line-height: $lh-title;
+.display1 {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: $lh-title;
 }
 
-.display2{
-    font-weight: 700;
+.display2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: $lh-title;
+}
+
+.h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: $lh-title;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: $lh-title;
+}
+
+.h3 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: $lh-title;
+}
+
+.h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: $lh-title;
+}
+
+.h5 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: $lh-title;
+}
+
+.h6 {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: $lh-title;
+}
+
+@media (max-width: 767px) {
+  .h2-md {
     font-size: 2rem;
-    line-height: $lh-title;
-}
-
-.h1{
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: $lh-title;
-}
-
-.h2{
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: $lh-title;
-}
-
-.h3{
-    font-weight: 700;
+  }
+  .h3-md {
     font-size: 1.75rem;
-    line-height: $lh-title;
-}
-
-.h4{
-    font-weight: 700;
+  }
+  .h4-md {
     font-size: 1.5rem;
-    line-height: $lh-title;
-}
-
-.h5{
-    font-weight: 700;
+  }
+  .h5-md {
     font-size: 1.25rem;
-    line-height: $lh-title;
-}
-
-.h6{
-    font-weight: 700;
+  }
+  .h6-md {
     font-size: 1rem;
-    line-height: $lh-title;
+  }
 }
 
-@media(max-width: 767px) {
-    .h3-md{
-        font-size: 1.75rem;
-    }
-    .h4-md{
-        font-size: 1.5rem;
-    }
-    .h5-md{
-        font-size: 1.25rem;
-    }
-    .h6-md{
-        font-size: 1rem;
-    }
-}
-
-@media(max-width: 576px) {
-    .h3-sm{
-        font-size: 1.75rem;
-    }
-    .h4-sm{
-        font-size: 1.5rem;
-    }
-    .h5-sm{
-        font-size: 1rem;
-    }
-    .h6-sm{
-        font-size: 1rem;
-    }
-}
-
-.text-md{
-    font-weight: $fw-normal;
+@media (max-width: 576px) {
+  .display2-sm {
+    font-weight: 700 !important;
+    font-size: 3rem !important;
+  }
+  .h2-sm {
+    font-size: 2rem;
+  }
+  .h3-sm {
+    font-size: 1.75rem;
+  }
+  .h4-sm {
+    font-size: 1.5rem;
+  }
+  .h5-sm {
     font-size: 1rem;
+  }
+  .h6-sm {
+    font-size: 1rem;
+  }
 }
 
-.text-sm{
-    font-weight: $fw-normal;
-    font-size: 0.875rem;
+.text-md {
+  font-weight: $fw-normal;
+  font-size: 1rem;
 }
 
-.text-white{
-    color:$neutral-0;
+.text-sm {
+  font-weight: $fw-normal;
+  font-size: 0.875rem;
 }
 
-.text-primary-400{
-    color:$primary-400;
+.text-white {
+  color: $neutral-0;
 }
 
-.text-primary-100{
-    color:$primary-100;
+.text-primary-400 {
+  color: $primary-400;
 }
 
-.text-neutral-600{
-    color:$neutral-600
+.text-primary-100 {
+  color: $primary-100;
+}
+
+.text-neutral-600 {
+  color: $neutral-600;
 }

@@ -7,9 +7,9 @@ import BrandStories from "../components/BrandStory/BrandStories/BrandStories";
 export default function BrandStory() {
   return (
     <>
+      <BrandHero />
       <div className="container">
         <div className="row justify-center">
-          <BrandHero />
           <BrandIntro />
           <BrandAbout />
           <BrandHistory />

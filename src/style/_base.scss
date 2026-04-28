@@ -1,10 +1,21 @@
 @use "./variables" as *;
 html {
   overflow-x: hidden;
+
+  // 防止 iOS 轉向時自動放大文字，破壞排版
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
   overflow-x: hidden;
+  
+  // 移除 iOS/Android 點擊元素時出現的藍色/灰色半透明遮罩
+  -webkit-tap-highlight-color: transparent;
+
+  // Mac + iOS 的字型渲染更平滑（接近 Windows 的效果）
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @media (min-width: 768px) {

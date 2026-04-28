@@ -6,26 +6,150 @@
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 
-
   img {
     display: inline-block;
     margin-right: 3rem;
   }
 
-  .userIcon{
+  .userIcon {
     color: $neutral-900;
     display: inline-block;
     transition: transform 0.4s ease;
-    &:hover{
+    &:hover {
       transform: scale(1.2);
     }
   }
 }
 
-@media (max-width:767px) {
-  
+.rightGroup {
+  display: flex;
+  align-items: center;
 }
 
-@media (max-width:576px) {
-  
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: relative;
+  z-index: 101;
+
+  span {
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background-color: $neutral-900;
+    border-radius: 2px;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+  }
+}
+
+.hamburgerOpen {
+  span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  span:nth-child(2) {
+    opacity: 0;
+  }
+  span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
+
+/* 手機板遮罩 */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.backdropOpen {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 手機版 nav 展開 */
+
+.drawer {
+  position: fixed;
+  top: 0;
+  // right: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: $neutral-0;
+  z-index: 100;
+  padding: 2rem 1.5rem;
+  // transform: translateX(-100%);
+  transform: translateX(-100%);
+  transition: transform 0.35s ease;
+}
+
+.drawerOpen {
+  transform: translateX(0);
+}
+
+/* 關閉按鈕 */
+
+.closeBtn {
+  display: block;
+  margin-left: auto;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 8px;
+  color: $neutral-900;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.hamburgerOpen {
+  span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  span:nth-child(2) {
+    opacity: 0;
+  }
+  span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
+
+.drawerNav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 3rem;
+
+  .link-underline {
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: row-reverse;
+  }
+  .hamburger {
+    display: flex;
+  }
 }

@@ -108,13 +108,15 @@ export default function Home() {
   return (
     <>
       <HomeHero />
-      <div className="row">
-        <NewArrivals newProducts={newProducts} />
-        <Restock restockItems={restockItems} />
-        <Collab />
-        <Categories categoryList={categoryList} />
+      <div className="container">
+        <div className="row">
+          <NewArrivals newProducts={newProducts} />
+          <Restock restockItems={restockItems} />
+          <Collab />
+          <Categories categoryList={categoryList} />
+        </div>
+        <Inspiration />
       </div>
-      <Inspiration />
     </>
   );
 }

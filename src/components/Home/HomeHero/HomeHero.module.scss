@@ -8,17 +8,21 @@
   background-size: cover;
   background-position: center;
   text-align: start;
-  width: 100vw;
-  margin-left: calc(50% - 50vw); // 避免圖片整個往右邊偏
+  width: 100%;
+  animation: fadeUp 0.8s ease-out both;
   .heroTop {
     color: $neutral-0;
-    transition: transform 0.3s ease-out, 
+    /*transition: transform 0.3s ease-out;*/
+    animation: fadeUp 0.8s ease-out both;
+    animation-delay: 0.3s;
   }
   .heroBottom {
     display: flex;
     justify-content: start;
     align-items: end;
     margin-left: 0.5rem;
+    animation: fadeUp 0.8s ease-out both;
+    animation-delay: 0.3s;
   }
   .heroBtn {
     display: flex;
@@ -32,6 +36,27 @@
 
     &:hover {
       transform: scale(1.2);
+    }
+  }
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .HomeHero {
+    background-image: url("../../../assets/Home/HomeHero_phone.png");
+    padding: 9.6875rem 1.5rem;
+    background-position: right;
+    .heroBtn{
+      padding:0.5rem 0.75rem;
     }
   }
 }

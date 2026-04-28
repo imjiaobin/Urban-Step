@@ -39,5 +39,21 @@
         transform: scale(1.2);
       }
     }
+
+    .star {
+      position: absolute;
+      left: -4.5rem;
+      top: -2rem;
+    }
+    .sparkle {
+      position: absolute;
+    }
+  }
+}
+
+@media (max-width: 577px) {
+  .collabSign,
+  .collabText {
+    display: block;
   }
 }

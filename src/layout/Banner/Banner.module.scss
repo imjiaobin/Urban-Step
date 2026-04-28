@@ -3,8 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  margin-left: calc(50% - 50vw); // 避免圖片整個往右邊偏
+  width: 100%;
   background-color: $primary-200;
 
   a{
