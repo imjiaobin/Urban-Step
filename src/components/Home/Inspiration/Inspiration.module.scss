@@ -7,6 +7,24 @@
   gap: 8px;
 }
 
+@media (max-width: 577px) {
+  .inspiration {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .imgWrapper {
+    flex: 0 0 78vw;
+    // height: 280px;
+    scroll-snap-align: start;
+  }
+}
+
 .imgWrapper {
   position: relative;
   overflow: hidden;

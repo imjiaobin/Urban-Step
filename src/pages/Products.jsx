@@ -93,6 +93,7 @@ const categories = [
 export default function Products() {
   return (
     <>
+      <div className="container">
       <section className="mb-32">
         <ProductBreadCrumb />
         <h3 className="h3 py-7 mb-24">所有頁面</h3>
@@ -106,6 +107,7 @@ export default function Products() {
           </div>
         </div>
       </section>
+      </div>
     </>
   );
 }
