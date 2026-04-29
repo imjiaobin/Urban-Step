@@ -9,37 +9,46 @@
     a {
       color: $neutral-600 !important;
       font-weight: 500;
-      & .active{
-        color: $neutral-900 !important;
-        font-weight: 700;
-      }
     }
 
-    // before 寫法
-    .breadcrumbItem + .breadcrumbItem::before{
+    .active {
+      color: $neutral-900 !important;
+      font-weight: 700;
+    }
+
+    .breadcrumbItem + .breadcrumbItem::before {
       content: '/';
       padding: 0 0.75rem;
       color: $neutral-300 !important;
       font-weight: 700;
     }
-
-    // after 寫法
-    // li {
-    //   font-size: 1.125rem !important;
-
-    //   &::after {
-    //     content: "/";
-    //     color: $neutral-600;
-    //     margin-left: 0.75rem;
-    //     margin-right: 0.75rem;
-    //   }
-
-    //   &:last-child::after {
-    //     content: none; // 最後一個 li 不顯示斜線
-    //   }
-    // }
-
-    
   }
-  
+
+  // 中間層：桌機正常顯示，手機隱藏
+  .breadcrumbMiddle {
+    @media (max-width: 577px) {
+      display: none;
+    }
+  }
+
+  // 省略號：桌機隱藏，手機顯示
+  .breadcrumbEllipsis {
+    display: none;
+
+    @media (max-width: 577px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 577px) {
+    ol {
+      font-size: 0.875rem;
+      margin-bottom: 1rem;
+    }
+
+    .breadcrumbItem + .breadcrumbItem::before {
+      padding: 0 0.5rem;
+    }
+  }
 }
