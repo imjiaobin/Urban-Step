@@ -1,0 +1,55 @@
+@use "../../../style/variables" as *;
+.productDetail {
+  .productImage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    img {
+      width: calc(50% - 0.25rem); /* 記得補上 gap的距離 */
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      background-color: $neutral-100;
+    }
+    @media (max-width: 768px) {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+      }
+    }
+  }
+  .productInfo {
+    .beforeDiscount {
+      color: $neutral-500;
+      text-decoration: line-through;
+      font-size: 0.875rem;
+    }
+    .colorInfo {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap:0.5rem;
+      .colorCard {
+        text-align: center;
+        img {
+          width: 6rem;
+          aspect-ratio: 1/1;
+          background-color: rgba(241, 243, 247, 1);
+          object-fit: cover;
+          margin-bottom: 0.125rem;
+        }
+        p {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

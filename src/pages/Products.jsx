@@ -15,6 +15,17 @@ const products = [
     color: "深邃藍",
     price: 2600,
     imageUrl: "/Products/platform404_darkblue.png",
+    detailImgs: [
+      "/Product/PLATFORM404/Platform404_1.png",
+      "/Product/PLATFORM404/Platform404_2.png",
+      "/Product/PLATFORM404/Platform404_3.png",
+      "/Product/PLATFORM404/Platform404_4.png",
+      "/Product/PLATFORM404/Platform404_5.png",
+      "/Product/PLATFORM404/Platform404_6.png",
+      "/Product/PLATFORM404/Platform404_7.png",
+      "/Product/PLATFORM404/Platform404_8.png",
+    ],
+    colors: [{color:"藍色", images:["/Product/PLATFORM404/Platform404_1.png"]}, {color:"褐色", images:["/Product/PLATFORM404/Platform404_brown_1.png"]}],
   },
   {
     id: 2,
