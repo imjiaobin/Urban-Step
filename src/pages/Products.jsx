@@ -25,7 +25,24 @@ const products = [
       "/Product/PLATFORM404/Platform404_7.png",
       "/Product/PLATFORM404/Platform404_8.png",
     ],
-    colors: [{color:"藍色", images:["/Product/PLATFORM404/Platform404_1.png"]}, {color:"褐色", images:["/Product/PLATFORM404/Platform404_brown_1.png"]}],
+    colors: [
+      { color: "藍色", images: ["/Product/PLATFORM404/Platform404_1.png"] },
+      {
+        color: "褐色",
+        images: ["/Product/PLATFORM404/Platform404_brown_1.png"],
+      },
+    ],
+    sizes: [
+      { size: "35(22.5cm)", quantity: 6 },
+      { size: "36(23.0cm)", quantity: 3 },
+      { size: "37(23.5cm)", quantity: 1 },
+      { size: "38(24.0cm)", quantity: 2 },
+      { size: "39(24.5cm)", quantity: 3 },
+      { size: "40(25.0cm)", quantity: 7 },
+      { size: "41(26.0cm)", quantity: 8 },
+      { size: "42(26.5cm)", quantity: 0 },
+      { size: "43(27.0cm)", quantity: 0 }
+    ],
   },
   {
     id: 2,

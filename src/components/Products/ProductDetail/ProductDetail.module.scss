@@ -36,7 +36,7 @@
       display: flex;
       justify-content: left;
       align-items: center;
-      gap:0.5rem;
+      gap: 0.5rem;
       .colorCard {
         text-align: center;
         img {
@@ -49,6 +49,118 @@
         p {
           font-weight: 500;
         }
+      }
+    }
+    .sizeBtnGroup {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      .sizeBtn {
+        width: calc((100% - 0.5rem * 2) / 3);
+        padding: 0.75rem 1.5rem;
+        border: 1.25px solid $neutral-300;
+        border-radius: 0.25rem;
+        // 每行 3 個 button，之間有 2 個 gap（0.5rem * 2），所以每個 button 寬度 = (100% - 總gap) / 3。
+      }
+      .sizeBtnEmpty {
+        color: $neutral-500;
+      }
+      .sizeBtnActive {
+        border-color: $neutral-900;
+      }
+      .lowStockBtn {
+        color: #d74f4f;
+        border-color: #d74f4f;
+      }
+
+      @media (max-width: 577px) {
+        .sizeBtn {
+          width: calc((100% - 0.5rem * 1) / 2);
+        }
+      }
+    }
+    .lowStock {
+      color: #d74f4f;
+    }
+    .funcBtnGroup {
+      display: flex;
+      gap: 0.5rem;
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 500;
+        flex: 1;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        border: 1px solid $neutral-900;
+        border-radius: 0.25rem;
+      }
+      .addToWish {
+        background-color: transparent;
+        transition: 0.3s ease;
+        &:active {
+          background-color: $neutral-900;
+          color: $neutral-0;
+        }
+      }
+      .reserveTryOn {
+        background-color: $neutral-900;
+        color: $neutral-0;
+        transition: 0.3s ease;
+        &:active {
+          background-color: transparent;
+          color: $neutral-900;
+        }
+      }
+    }
+    .remainQuantity {
+      font-size: 0.875rem !important;
+    }
+    .otherInfo {
+      border-bottom: 1px solid $neutral-300;
+      color: $neutral-600;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      .subtitle {
+        font-weight: 500;
+        color: $neutral-900;
+        margin-bottom: 0.25rem;
+      }
+      p {
+        margin-bottom: 0.125rem;
+      }
+    }
+    .mightLike {
+      display: flex;
+      gap: 1.5rem;
+    }
+  }
+}
+.mightLike {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  .imgWrapper {
+    background-color: rgba(241, 243, 247, 1);
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .cardBody{
+      display: flex;
+      flex-wrap: nowrap;
+      span{
+        display: inline-block;
       }
     }
   }
