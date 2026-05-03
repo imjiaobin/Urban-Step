@@ -2,6 +2,7 @@ import ProductBreadCrumb from "../components/Products/ProductBreadCrumb/ProductB
 import ProductAside from "../components/Products/ProductAside/ProductAside";
 import ProductList from "../components/Products/ProductList/ProductList";
 import Pagination from "../components/common/Pagination/Pagination";
+import styles from "./Products.module.scss";
 
 // 取得商品資料
 
@@ -14,6 +15,34 @@ const products = [
     color: "深邃藍",
     price: 2600,
     imageUrl: "/Products/platform404_darkblue.png",
+    detailImgs: [
+      "/Product/PLATFORM404/Platform404_1.png",
+      "/Product/PLATFORM404/Platform404_2.png",
+      "/Product/PLATFORM404/Platform404_3.png",
+      "/Product/PLATFORM404/Platform404_4.png",
+      "/Product/PLATFORM404/Platform404_5.png",
+      "/Product/PLATFORM404/Platform404_6.png",
+      "/Product/PLATFORM404/Platform404_7.png",
+      "/Product/PLATFORM404/Platform404_8.png",
+    ],
+    colors: [
+      { color: "藍色", images: ["/Product/PLATFORM404/Platform404_1.png"] },
+      {
+        color: "褐色",
+        images: ["/Product/PLATFORM404/Platform404_brown_1.png"],
+      },
+    ],
+    sizes: [
+      { size: "35(22.5cm)", quantity: 6 },
+      { size: "36(23.0cm)", quantity: 3 },
+      { size: "37(23.5cm)", quantity: 1 },
+      { size: "38(24.0cm)", quantity: 2 },
+      { size: "39(24.5cm)", quantity: 3 },
+      { size: "40(25.0cm)", quantity: 7 },
+      { size: "41(26.0cm)", quantity: 8 },
+      { size: "42(26.5cm)", quantity: 0 },
+      { size: "43(27.0cm)", quantity: 0 }
+    ],
   },
   {
     id: 2,
@@ -90,23 +119,32 @@ const categories = [
   { id: 5, category: "限定 / 聯名企劃" },
 ];
 
+const breadcrumbItems = [{ label: "首頁", to: "/" }, { label: "所有商品" }];
+
 export default function Products() {
   return (
     <>
-      <div className="container">
-      <section className="mb-32">
-        <ProductBreadCrumb />
-        <h3 className="h3 py-7 mb-24">所有頁面</h3>
-        <div className="row">
-          <aside className="col-2">
+      <div className="container mb-32">
+        <ProductBreadCrumb items={breadcrumbItems} />
+        <div className={`${styles.productsHeader} py-7 px-md-0 mb-24`}>
+          <h3 className="h3 h4-md ">所有商品</h3>
+          <select className={styles.categorySelect}>
+            {categories.map((cat) => (
+              <option className="" key={cat.id} value={cat.category}>
+                {cat.category}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="row px-md-12">
+          <aside className="col-2 d-md-none">
             <ProductAside categories={categories} />
           </aside>
-          <div className="col-10">
+          <div className="col-10 col-md-4">
             <ProductList products={products} />
             <Pagination />
           </div>
         </div>
-      </section>
       </div>
     </>
   );
